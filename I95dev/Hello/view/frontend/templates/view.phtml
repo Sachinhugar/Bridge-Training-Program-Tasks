@@ -1,0 +1,8 @@
+<h2><?php echo 'This is custom template file in CMS Block'; ?></h2>
+<h2><?php echo $block->getArticles(); ?></h2>
+<?php
+echo $this->getLayout()
+          ->createBlock('Magento\Cms\Block\Block')
+          ->setBlockId('my_block_identifier')
+          ->toHtml();
+          ?>
